@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            color: white;
+            font-size: 2em;
+        }
+        .gradient{
+            background: linear-gradient(90deg,#4383c3 40%,#30b4cb 60%);
+            width: 100vw;
+            height: 100vh;
+        }
+        .center-window{
+            margin-left: auto;
+            margin-right: auto;
+            width: 70vh;
+            border: white 3px solid;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient">
+        <div class="center-window">
+            <div style="border: white 3px solid; height: 70vh;">
+                <button onclick="onFingerClicked(4)">4</button>
+                <button onclick="onFingerClicked(3)">3</button>
+                <button onclick="onFingerClicked(2)">2</button>
+                <button onclick="onFingerClicked(1)">1</button>
+                <button onclick="onFingerClicked(0)">0</button>
+            </div>
+
+            <div id="counter">3</div>
+        </div>
+    </div>
+</body>
+<script src="online.js"></script>
+</html>
